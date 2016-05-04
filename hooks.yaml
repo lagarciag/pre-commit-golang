@@ -29,4 +29,4 @@
     entry: run-go-tests.sh
     files: '\.go$'
     language: 'script'
-    description: "Runs `go test`
+    description: "Runs `go test`"
