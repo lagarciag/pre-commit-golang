@@ -28,4 +28,3 @@
     files: '\.go$'
     language: 'script'
     description: "Runs go test`"
-
