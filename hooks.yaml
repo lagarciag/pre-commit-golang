@@ -16,17 +16,16 @@
     files: '\.go$'
     language: 'script'
     description: "Runs `golint`, requires https://github.com/golang/lint"
-
 -   id: go-metalinter
     name: 'go metalinter'
     entry: run-go-metalinter.sh
     files: '\.go$'
     language: 'script'
     description: "Runs `gometalinter`, requires https://github.com/alecthomas/gometalinter"
-
 -   id: go-test
     name: 'go test'
-    entry: run-go-tests.sh
+    entry: run-go-test.sh
     files: '\.go$'
     language: 'script'
-    description: "Runs `go test`
+    description: "Runs go test`"
+
