@@ -34,3 +34,9 @@
     files: '\.go$'
     language: 'script'
     description: "Runs go test`"
+-   id: c-uncrustify
+    name: 'c uncrustify'
+    entry: run-c-uncrustify.sh
+    files: '\.(c|h|cpp)$'
+    language: 'script'
+    description: "Runs `uncrustify for C/c++`, requires uncrustify"
