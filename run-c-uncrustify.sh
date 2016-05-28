@@ -22,8 +22,8 @@ else
     VERSION_MAJOR=$(uncrustify --version | cut -f2 -d' ' | cut -f1 -d.)
     VERSION_MINOR=$(uncrustify --version | cut -f2 -d' ' | cut -f2 -d.)
     VERSION_NUMBER=$(echo $(( ($VERSION_MAJOR << 8) | $VERSION_MINOR )))
-    if [ $VERSION_NUMBER -lt 62 ] ; then
-        echo "Error: your uncrustify is too old (${VERSION_MAJOR}.${VERSION_MINOR}), version 0.62 is required as minimum"
+    if [ $VERSION_NUMBER -lt 59 ] ; then
+        echo "Error: your uncrustify is too old (${VERSION_MAJOR}.${VERSION_MINOR}), version 0.59 is required as minimum"
         exit -1
     fi
     echo "Uncrustitfy is as ${UNCRUSTIFY}";
