@@ -7,5 +7,6 @@ PYTHONPATH=${GOPATH}/src/github.hpe.com/GoP4Sim/clintsim/scripts
 checktests=${PYTHONPATH}/pyclintsim/check_tests.py
 
 exec 5>&1
-output="$(PYTHONPATH=$PYTHONPATH python $checktests | tee /dev/fd/5)"
+#output="$(PYTHONPATH=$PYTHONPATH python $checktests | tee /dev/fd/5)"
+output="$(PYTHONPATH=$PYTHONPATH python $checktests)"
 [[ -z "$output" ]]
