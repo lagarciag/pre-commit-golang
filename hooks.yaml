@@ -40,3 +40,9 @@
     files: '\.(c|h|cpp)$'
     language: 'script'
     description: "Runs `uncrustify for C/c++`, requires uncrustify"
+-   id: go-check-tests
+    name: 'go check tests'
+    entry: run-check_tests.sh
+    files: '\.(go)$'
+    language: 'script'
+    description: "Checks that all packages have a corresponding test"
