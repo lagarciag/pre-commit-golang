@@ -8,5 +8,5 @@ checktests=${PYTHONPATH}/pyclintsim/check_tests.py
 
 exec 5>&1
 #output="$(PYTHONPATH=$PYTHONPATH python $checktests | tee /dev/fd/5)"
-output="$(PYTHONPATH=$PYTHONPATH python $checktests --file_name "$@" )"
+output="$(PYTHONPATH=$PYTHONPATH python $checktests --file_name "$1" )"
 [[ -z "$output" ]]
