@@ -46,3 +46,9 @@
     files: '\.(go)$'
     language: 'script'
     description: "Checks that all packages have a corresponding test"
+-   id: go-check-code
+    name: 'go check code'
+    entry: run-check_code.sh
+    files: '\.(go)$'
+    language: 'script'
+    description: "Several check on go code"
