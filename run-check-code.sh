@@ -4,8 +4,8 @@
 #
 set -e
 PYTHONPATH=${GOPATH}/src/github.hpe.com/GoP4Sim/clintsim/scripts
-checktests=${PYTHONPATH}/pyclintsim/check_tests.py
+checkcode=${PYTHONPATH}/pyclintsim/code_checks.py
 
 exec 5>&1
-output="$(PYTHONPATH=$PYTHONPATH python $checktests -l "$@" )"
+output="$(PYTHONPATH=$PYTHONPATH $checkcode -l "$@" )"
 [[ -z "$output" ]]
