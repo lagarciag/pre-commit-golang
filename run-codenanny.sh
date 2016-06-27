@@ -6,6 +6,6 @@ set -e
 
 exec 5>&1
 echo "$@" > debug.out 
-output="$(codenanny lint --list \""$@\"")"
+output="$(codenanny lint --list "$@")"
 echo $output > debug2.out
 [[ -z "$output" ]]
