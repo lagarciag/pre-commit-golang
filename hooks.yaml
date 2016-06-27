@@ -52,3 +52,10 @@
     files: '\.(go)$'
     language: 'script'
     description: "Several check on go code"
+-   id: go-codenanny
+    name: 'codenanny'
+    entry: run-codenanny.sh
+    files: '\.(go)$'
+    language: 'script'
+    description: "runs codenanny for go"
+
