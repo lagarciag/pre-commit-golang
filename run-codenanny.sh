@@ -5,7 +5,5 @@
 set -e
 
 exec 5>&1
-echo "$@" > debug.out 
-output="$(codenanny lint --list "$@")"
-echo $output > debug2.out
+output="$(codenanny lint --list "$@" | tee /dev/fd/5)"
 [[ -z "$output" ]]
